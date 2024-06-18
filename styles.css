@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97.5vh;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(17, 0, 255)); 
+    border-radius: 10px;
+    width: 450px;
+    height: 50px;
+}
+
+.til {
+    width: 500px; 
+    color:rgb(0, 0, 0)
+}
+
+.cuadro {
+    width: 380px;
+    height: 500px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+} 
+
+#cuaa {
+    display: flex;
+    justify-content: center;
+}
+
+#resultado {
+    width: 370px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    color: rgb(240, 248, 255);
+    border-radius: 10px;
+    font-size: 300%;
+    text-align: end;
+    cursor: default;
+}
+
+.lin {
+    text-align: center;
+    display: flex;
+}
+
+.lin > div {
+    display: inline-block;
+    text-align: left;
+    flex: 1;
+} 
+
+.btn {
+    background: rgb(0, 0, 0);
+    width: 60px; 
+    height: 60px; 
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+    border: 0;
+}
+
+.btn img {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    object-fit: contain;
+}
+
+.lin {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
+    grid-gap: 10px; /* Espacio entre los elementos */
+}
+
+#igual {
+    height: 180%;
+    border-radius: 10%;
+    grid-row: 1 / 3; /* El botón 'Igual' se extiende a través de 2 filas */
+    background-color: rgb(0, 255, 34);
+}
+
+.lin:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño para la segunda fila */
+}
+
+#es {
+    text-align: center;
+    display: flex;
+}

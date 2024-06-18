@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img\calculadora.png">
+</head>
+<body style="background-image: linear-gradient(yellow, blue,red);">
+    <div class="titulo" id="caso">
+        <h1 class="til">
+            Calculadora
+        </h1>
+    </div>
+    <div class="cuadro" id="cua">
+        <div class="contenedor1">
+            <input type="text" id="resultado" readonly autofocus>
+        </div>
+        <div class="contenedor2 ">
+            <div class="lin">
+                <div>
+                    <button type="button" class="btn fun" id="borrarTodo" onclick><img src="img\letrac.svg" alt="Borrar todo"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn fun" id="dividir" onclick><img src="img\dividir.svg" alt="Dividir"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn fun" id="multiplicar" onclick><img src="img\multiplicar.svg" alt="Multiplicar"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn fun" id="borrarUno" onclick><img src="img\borrar.svg" alt="Borrar uno"></button>
+                </div>
+            </div>
+            <div class="lin" id="es">
+                <div>
+                    <button type="button" class="btn" id="siete" onclick><img src="img\siete.svg" alt="Siete"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="ocho" onclick><img src="img\ocho.svg" alt="Ocho"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="nueve" onclick><img src="img\nueve.svg" alt="Nueve"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn fun" id="resta" onclick><img src="img\menos.svg" alt="Menos"></button>
+                </div>
+            </div>
+            <div class="lin">
+                <div>
+                    <button type="button" class="btn" id="cuatro" onclick><img src="img\cuatro.svg" alt="Cuatro"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="cinco" onclick><img src="img\cinco.svg" alt="Cinco"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="seis" onclick><img src="img\seis.svg" alt="Seis"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn fun" id="suma" onclick><img src="img\mas.svg" alt="Mas"></button>
+                </div>
+            </div>
+            <div class="lin">
+                <div>
+                    <button type="button" class="btn" id="uno" onclick><img src="img\uno.svg" alt="Uno"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="dos" onclick><img src="img\dos.svg" alt="Dos"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="tres" onclick><img src="img\tres.svg" alt="Tres"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="igual" onclick="igual()"><img src="img\igual.svg" alt="Igual"></button>
+                </div>
+            </div>
+            <div class="lin">
+                <div>
+                    <button type="button" class="btn" id="porcentaje" onclick><img src="img\porcentaje.svg" alt="Porcentaje"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="cero" onclick><img src="img\cero.svg" alt="Cero"></button>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="punto" onclick><img src="img\punto.svg" alt="Punto"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="funciones.js"></script>
+</body>
+</html>
